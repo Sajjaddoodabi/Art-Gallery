@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             x:Class="YourNamespace.SeventhPage">
+    <AbsoluteLayout>
+        <Image Source="page6.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" />
+
+        <StackLayout>
+        <Label Text="{Binding SeventhPageTitle}" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+		<Button Text="Navigate to Sixth Art" Clicked="OnNavigateToSixthPageBackButtonClicked"/>
+		<Button Text="Navigate to Eighth Art" Clicked="OnNavigateToEighthPageButtonClicked"/>
+	</StackLayout>
+        </AbsoluteLayout>
+
+
+</ContentPage>

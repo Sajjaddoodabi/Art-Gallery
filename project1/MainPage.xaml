@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             x:Class="YourNamespace.MainPage">
+    <AbsoluteLayout>
+        <Image Source="home.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" />
+
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Hello, welcome to our gallery" FontSize="20" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Button Text="Navigate to Gallery" Clicked="OnNavigateButtonClicked" HorizontalOptions="Center" />
+        </StackLayout>
+       
+    </AbsoluteLayout>
+
+</ContentPage>
